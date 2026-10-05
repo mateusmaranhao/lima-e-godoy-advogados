@@ -1,0 +1,8 @@
+{
+  "name": "Lima \u0026 Godoy Advogados Associados",
+  "description": "Escritório de advocacia em Campinas - SP com mais de 10 anos de atuação em Direito de Família, Sucessões, Previdenciário (INSS) e Trabalhista.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "sans-serif";
+  --font-heading: "Plus Jakarta Sans", "sans-serif";
+  --font-mono: "JetBrains Mono", "monospace";
+
+  /* Paleta oficial Lima & Godoy Advogados Associados - Fundo Claro Sofisticado */
+  --color-cream-50: #FAF9F6;
+  --color-cream-100: #F3F1EC;
+  --color-cream-200: #E6E2D8;
+
+  --color-navy-950: #0B1727; /* Azul marinho profundo executivo */
+  --color-navy-900: #0F2942; /* Azul clássico advocacia */
+  --color-navy-800: #1B3B5C;
+  --color-navy-700: #2C5282;
+
+  --color-gold-400: #C5A059; /* Dourado nobre / bronze */
+  --color-gold-500: #9A7226;
+  --color-gold-600: #855F1B;
+  --color-gold-700: #6B4C14;
+
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1E293B;
+  --color-slate-900: #0F172A;
+
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    color: #0F172A;
+  }
+  ::selection {
+    background-color: #E2E8F0;
+    color: #0F172A;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
